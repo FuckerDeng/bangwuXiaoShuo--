@@ -116,6 +116,7 @@ ol {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 a:hover {
@@ -205,6 +206,10 @@ input {
     clear: both;
 }
 
+body {
+    background-color: #FEFEFE;
+}
+
 
 /* 版心宽度 */
 
@@ -217,14 +222,14 @@ input {
 
 .head {
     height: 83px;
-    background-color: rgba(194, 185, 185);
+    /* background-color: rgba(194, 185, 185); */
     padding-top: 16px;
 }
 
 .head-inner {
     height: 54px;
     margin: 0 auto;
-    background-color: pink;
+    /* background-color: pink; */
     /* border-bottom: 1px solid #E6E6E6; */
 }
 
@@ -243,7 +248,7 @@ input {
     height: 38px;
     margin: 8px 0 0 208px;
     border-radius: 20px;
-    border: 2px solid #E6E6E6;
+    border: 2px solid #48B236;
     padding-left: 16px;
 }
 
@@ -264,7 +269,7 @@ input {
     width: 206px;
     height: 38px;
     float: right;
-    background-color: deeppink;
+    /* background-color: deeppink; */
     margin-top: 8px;
 }
 
@@ -272,6 +277,10 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.personnal i {
+    color: green;
 }
 
 .personnal .info img {
@@ -290,4 +299,33 @@ input {
 .banner {
     background-color: #48B236;
     height: 52px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.banner-in {
+    margin: 0 auto;
+}
+
+.banner-in>div {
+    margin: 0 auto;
+}
+
+.banner-in .l-banner,
+li {
+    float: left;
+}
+
+.banner-in .r-banner {
+    float: right;
+}
+
+.banner li {
+    height: 100%;
+    margin-right: 26px;
+    box-sizing: border-box;
+}
+
+.banner li:hover {
+    border-bottom: 2px solid #fff;
 }
