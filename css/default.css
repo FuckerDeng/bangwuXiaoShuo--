@@ -1,0 +1,293 @@
+/* 清除内外边距 */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+/* list elements 列表元素 */
+
+pre,
+
+/* text formatting elements 文本格式元素 */
+
+fieldset,
+lengend,
+button,
+input,
+textarea,
+
+/* form elements 表单元素 */
+
+th,
+td {
+    /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 设置默认字体 */
+
+body,
+button,
+input,
+select,
+textarea {
+    /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 {
+    font-size: 18px;
+    /* 18px / 12px = 1.5 */
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+
+/* 将斜体扶正 */
+
+code,
+kbd,
+pre,
+samp,
+tt {
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+/* 统一等宽字体 */
+
+small {
+    font-size: 12px;
+}
+
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+
+/* 重置列表元素 */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* 重置文本格式元素 */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+abbr[title],
+acronym[title] {
+    /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+
+/* 重置表单元素 */
+
+legend {
+    color: #000;
+}
+
+
+/* for ie6 */
+
+fieldset,
+img {
+    border: none;
+}
+
+
+/* img 搭车：让链接里的 img 无边框 */
+
+
+/* 注：optgroup 无法扶正 */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+
+/* 重置表格元素 */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 重置 hr */
+
+hr {
+    border: none;
+    height: 1px;
+}
+
+
+/* 激活状态下把外边框去掉 */
+
+input {
+    outline: none;
+}
+
+
+/* ===========================以上为清除默认样式============================ */
+
+
+/* 清除浮动写法，在父元素上写此类来清除浮动 */
+
+.clearfix::after {
+    /* 设置添加子元素的内容是空 */
+    content: '';
+    /* 设置添加子元素为块级元素 */
+    display: block;
+    /* 设置添加的子元素的高度0 */
+    height: 0;
+    /* 设置添加子元素看不见 */
+    visibility: hidden;
+    /* 设置clear：both */
+    clear: both;
+}
+
+
+/* 版心宽度 */
+
+.webContainer {
+    width: 1020px;
+}
+
+
+/* 头部样式 */
+
+.head {
+    height: 83px;
+    background-color: rgba(194, 185, 185);
+    padding-top: 16px;
+}
+
+.head-inner {
+    height: 54px;
+    margin: 0 auto;
+    background-color: pink;
+    /* border-bottom: 1px solid #E6E6E6; */
+}
+
+.head-inner>div {
+    float: left;
+}
+
+.logo {
+    width: 182px;
+    height: 54px;
+    background-color: black;
+}
+
+.search {
+    width: 320px;
+    height: 38px;
+    margin: 8px 0 0 208px;
+    border-radius: 20px;
+    border: 2px solid #E6E6E6;
+    padding-left: 16px;
+}
+
+.search>input {
+    border: none;
+    width: 260px;
+    line-height: 38px;
+}
+
+.search>i {
+    /* border: 1px solid black; */
+    float: right;
+    margin: 6px 16px;
+    color: green;
+}
+
+.head-inner>div.personnal {
+    width: 206px;
+    height: 38px;
+    float: right;
+    background-color: deeppink;
+    margin-top: 8px;
+}
+
+.personnal>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personnal .info img {
+    width: 36px;
+    height: 36%;
+}
+
+.personnal .mybook {
+    font-size: 14px;
+    align-content: space-between;
+}
+
+
+/* banner样式 */
+
+.banner {
+    background-color: #48B236;
+    height: 52px;
+}
