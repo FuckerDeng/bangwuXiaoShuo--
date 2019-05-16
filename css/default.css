@@ -119,9 +119,10 @@ a {
     color: #000;
 }
 
-a:hover {
+
+/* a:hover {
     text-decoration: underline;
-}
+} */
 
 abbr[title],
 acronym[title] {
@@ -207,7 +208,8 @@ input {
 }
 
 body {
-    background-color: #FEFEFE;
+    /* background-color: rgba(195, 207, 189, 0.712); */
+    background-color: #D4DCCF;
 }
 
 
@@ -215,6 +217,14 @@ body {
 
 .webContainer {
     width: 1020px;
+    margin: 0 auto;
+}
+
+.content-bgc {
+    background-color: #f3f1f1;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)
 }
 
 
@@ -222,13 +232,12 @@ body {
 
 .head {
     height: 83px;
-    /* background-color: rgba(194, 185, 185); */
     padding-top: 16px;
+    /* background-color: rgba(194, 185, 185); */
 }
 
 .head-inner {
     height: 54px;
-    margin: 0 auto;
     /* background-color: pink; */
     /* border-bottom: 1px solid #E6E6E6; */
 }
@@ -256,6 +265,7 @@ body {
     border: none;
     width: 260px;
     line-height: 38px;
+    background-color: #D4DCCF;
 }
 
 .search>i {
@@ -299,12 +309,9 @@ body {
 .banner {
     background-color: #48B236;
     height: 52px;
-    line-height: 52px;
+    line-height: 51px;
     font-weight: 700;
-}
-
-.banner-in {
-    margin: 0 auto;
+    font-size: 18px;
 }
 
 .banner-in>div {
@@ -321,11 +328,107 @@ li {
 }
 
 .banner li {
-    height: 100%;
+    height: 48px;
     margin-right: 26px;
-    box-sizing: border-box;
 }
 
 .banner li:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 4px solid #FEFEFE;
+    /* box-shadow: 0 0 10px #fff; */
+}
+
+.banner li a {
+    color: #FEFEFE;
+}
+
+
+/* 推荐和公告样式 */
+
+.focous {
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.focous-l {
+    width: 750px;
+    height: 252px;
+    /* margin: 20px 0 0 20px; */
+    /* background-color: deeppink; */
+    position: relative;
+}
+
+.focous-r {
+    width: 205px;
+    height: 252px;
+    /* background-color: green; */
+}
+
+.focous-l .show img {
+    width: 750px;
+    height: 252px;
+}
+
+.focous-l .select {
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.focous-l .select a {
+    float: left;
+    width: 150px;
+    line-height: 40px;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.focous-l .select a:last-child {
+    border-right: none;
+}
+
+.focous-l .select .active {
+    background-color: #48B236;
+}
+
+.focous .select:hover a {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.focous-l .select a:hover {
+    background-color: #48B236;
+}
+
+.focous-r li {
+    display: block;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.focous-r li:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 1px solid #282828;
+}
+
+.focous-r li:last-child {
+    border-bottom: none;
+}
+
+
+/* 随机推荐和搜索榜样式 */
+
+.sjtuijian {
+    height: 488px;
+    background-color: pink;
+}
+
+.sjtuijian .tj {
+    width: 730px;
+    height: 450px;
 }
